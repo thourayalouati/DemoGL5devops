@@ -41,7 +41,11 @@ public class EventRestController {
     @GetMapping("/getLogs/{d1}/{d2}")
     public List<Logistics> getLogistiquesDates (@PathVariable("d1") LocalDate date_debut, @PathVariable("d2") LocalDate date_fin){
         log.info("Get Logistics - branche user-management");
+<<<<<<< HEAD
         log.info("Get Logistics - testing tags new");
+=======
+        log.info("Get Logistics - testing tags");
+>>>>>>> 2dfb221 (adding tags message)
         return eventServices.getLogisticsDates(date_debut,date_fin);
     }
 }
